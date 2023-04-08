@@ -53,6 +53,10 @@ document.getElementById("submit").addEventListener("click", (event) => {
 			} else {
 				addError(inputs[i], i);
 			}
+			if(inputs[4].value !== '' && inputs[5].value !== ''){
+				event.preventDefault();
+				passwordValidation(inputs[4], inputs[5]);
+			}
 		});
 	}
 
