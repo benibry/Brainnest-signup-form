@@ -5,6 +5,7 @@
   --brown: #A6775B;
   --off-white: #faf9f6;
   --red: #D42727;
+  --input-text: #222222;
 }
 
 .container {
@@ -88,7 +89,7 @@ input {
   border-radius: 5px;
   padding: 0 10px;
   font-weight: 300;
-  color: var(--black);
+  color: var(--input-text);
   transition: all ease-in-out 200ms;
   box-sizing: border-box;
 }
@@ -260,5 +261,15 @@ input:focus {
 
   label {
     font-size: 0.9rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+    --off-white: #121212;
+    --black: #fdfdfc;
+    --white: #222222;
+
   }
 }
