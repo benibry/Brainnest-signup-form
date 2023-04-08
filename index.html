@@ -42,7 +42,7 @@
 									First Name
 									<span class="required-star">*</span>
 								</label>
-								<input type="text" name="firstname" id="first-name" placeholder="John" required>
+								<input type="text" name="firstname" id="first-name" placeholder="John" pattern="[A-Za-z]{1,32}" required>
 								<p class="error-message" id="error-message-first-name"> * Please enter your first name
 								</p>
 							</div>
@@ -51,7 +51,7 @@
 									Last Name
 									<span class="required-star">*</span>
 								</label>
-								<input type="text" name="lastname" id="last-name" placeholder="Doe" required>
+								<input type="text" name="lastname" id="last-name" placeholder="Doe" pattern="[A-Za-z]{1,32}" required>
 								<p class="error-message" id="error-message-last-name"> * Please enter your last name
 								</p>
 							</div>
@@ -68,7 +68,7 @@
 									Phone Number
 									<span class="required-star">*</span>
 								</label>
-								<input type="number" name="phonenumber" id="phone-number" placeholder="176123456"
+								<input type="tel" name="phonenumber" id="phone-number" placeholder="176123456"
 									required>
 								<p class="error-message" id="error-message-number"> * Please enter your phone number
 								</p>
