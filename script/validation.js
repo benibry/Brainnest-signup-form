@@ -27,8 +27,8 @@ const passwordValidation = (password, confirmPassword) => {
 	if (password.value !== confirmPassword.value) {
 		addError(password, 4);
 		addError(confirmPassword, 5);
-		passwordError.innerHTML = 'Passwords do not match';
-		confirmPasswordError.innerHTML = '';
+		passwordError.textContent = 'Passwords do not match';
+		confirmPasswordError.textContent = '';
 		validPassword = false;
 	} else {
 		removeError(password, 4);
